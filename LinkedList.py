@@ -105,8 +105,8 @@ class LinkedList:
 
 			elif increment == position:
 				print("here")
-				new_node.next=previous_node.next
-				previous_node.next = new_node.next
+				new_node.next=node
+				previous_node.next = new_node
 				self.size +=1
 
 			increment += 1
@@ -144,6 +144,7 @@ class LinkedList:
 
 				previous_node.next = node.next
 				self.size -=1
+
 
 
 

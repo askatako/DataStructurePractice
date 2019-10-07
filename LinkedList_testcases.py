@@ -12,11 +12,14 @@ LL.insert(77)
 print(LL.get_size())
 print(LL.get_tail().val)
 
-LL.insert_at_position(5,1)
-print(LL.head.next.next.next.val)
-#print(LL.head.next.val)
+LL.insert_at_position(5,2)
+#print(LL.head.next.next.next.val)
+print(LL.head.next.next.val)
 
 print(LL.get_size())
+
+LL.remove_at_position(2)
+print(LL.head.next.next.val)
 
 #print(remove_at_position)
 
