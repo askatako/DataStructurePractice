@@ -90,6 +90,11 @@ class LinkedList:
 		node =self.head
 		previous_node = None
 
+		if position == 0:
+			self.insert_at_head(new_value)
+			self.size +=1
+			return 
+
 		while increment <= position:
 			print(increment)
 
@@ -104,13 +109,14 @@ class LinkedList:
 					continue
 
 			elif increment == position:
+
 				print("here")
 				new_node.next=node
 				previous_node.next = new_node
+				
 				self.size +=1
 
 			increment += 1
-
 
 
 	def remove_at_position(self, position):
